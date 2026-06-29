@@ -1,5 +1,7 @@
 # iptv-proxy
 
+[![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
+
 一个极简的 IPTV 直播流反向代理。把本地端口的请求原样转发到上游 IPTV 源，
 保留原始 path/query，并对直播流做即时 flush（不缓冲），适合在本地或路由器上
 转发运营商组播/单播源。
@@ -47,3 +49,7 @@ go build -o iptv-proxy ./
 
 仓库内的 `p.conf` 是等价功能的 nginx 配置参考（含 30x 重定向处理），
 按需取用。
+
+## 关于
+
+本项目由 [Claude Code](https://claude.com/claude-code) 协助开发。
